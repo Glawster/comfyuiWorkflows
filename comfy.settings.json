@@ -1,0 +1,10 @@
+{
+    "Comfy.InstalledVersion": "1.28.8",
+    "Comfy.TutorialCompleted": true,
+    "Comfy.ColorPalette": "dark",
+    "Comfy.VueNodes.Enabled": true,
+    "Comfy.Window.UnloadConfirmation": false,
+    "Comfy.Workflow.AutoSave": "after delay",
+    "Comfy.LinkRenderMode": 2,
+    "Comfy.Minimap.Visible": false
+}
