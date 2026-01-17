@@ -1,18 +1,9 @@
 {
-  "1": {
-    "inputs": {
-      "image": "cunilingus-14.png"
-    },
-    "class_type": "LoadImage",
-    "_meta": {
-      "title": "Load Image"
-    }
-  },
   "2": {
     "inputs": {
-      "lora_name": "kathy_person_r16_512x512.safetensors",
-      "strength_model": 0.8,
-      "strength_clip": 0.75,
+      "lora_name": "kathy_person_r16_512_bs2.safetensors",
+      "strength_model": 1,
+      "strength_clip": 0.9,
       "model": [
         "3",
         0
@@ -43,10 +34,10 @@
       "max_size": 768,
       "seed": 12345678,
       "steps": 20,
-      "cfg": 4.2,
+      "cfg": 3,
       "sampler_name": "dpmpp_2m",
       "scheduler": "karras",
-      "denoise": 0.22,
+      "denoise": 0.45,
       "feather": 4,
       "noise_mask": true,
       "force_inpaint": true,
@@ -67,7 +58,7 @@
       "tiled_encode": false,
       "tiled_decode": false,
       "image": [
-        "1",
+        "16",
         0
       ],
       "model": [
@@ -115,7 +106,7 @@
   },
   "6": {
     "inputs": {
-      "text": "(kathy:1.2), kathy, same woman, same person, consistent facial structure,\nnatural skin texture, sharp eyes\n\n",
+      "text": "(kathy:1.3), kathy, same woman, same person,\nconsistent facial structure, natural skin texture,\nsharp eyes, realistic face\n",
       "clip": [
         "2",
         1
@@ -128,7 +119,7 @@
   },
   "7": {
     "inputs": {
-      "text": "blurry eyes, soft eyes, painterly eyes, smooth eye texture",
+      "text": "different person, generic face, stock photo face,\ncelebrity, model face\n",
       "clip": [
         "2",
         1
@@ -146,6 +137,15 @@
     "class_type": "UltralyticsDetectorProvider",
     "_meta": {
       "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "16": {
+    "inputs": {
+      "image": "bp-13.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
     }
   }
 }
