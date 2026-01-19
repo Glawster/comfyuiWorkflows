@@ -2,8 +2,8 @@
   "2": {
     "inputs": {
       "lora_name": "kathy_person_r16_512_bs2.safetensors",
-      "strength_model": 1,
-      "strength_clip": 0.9,
+      "strength_model": 1.2,
+      "strength_clip": 1,
       "model": [
         "3",
         0
@@ -32,12 +32,12 @@
       "guide_size": 512,
       "guide_size_for": true,
       "max_size": 768,
-      "seed": 12345678,
-      "steps": 20,
-      "cfg": 3,
+      "seed": 172901019167455,
+      "steps": 26,
+      "cfg": 3.8,
       "sampler_name": "dpmpp_2m",
       "scheduler": "karras",
-      "denoise": 0.25,
+      "denoise": 0.2,
       "feather": 4,
       "noise_mask": true,
       "force_inpaint": true,
@@ -52,7 +52,7 @@
       "sam_mask_hint_use_negative": "False",
       "drop_size": 10,
       "wildcard": "",
-      "cycle": 1,
+      "cycle": 2,
       "inpaint_model": true,
       "noise_mask_feather": 4,
       "tiled_encode": false,
@@ -106,7 +106,7 @@
   },
   "6": {
     "inputs": {
-      "text": "(kathy:1.3), kathy, same woman, same person,\nconsistent facial structure, natural skin texture,\nsharp eyes, realistic face\n,clean eyelids, crisp eyelashes, natural catchlights\n",
+      "text": "(kathy:1.5), kathy, same woman, same person,\nconsistent facial structure, natural skin texture,\nsharp eyes, realistic face\n,clean eyelids, crisp eyelashes, natural catchlights\n",
       "clip": [
         "2",
         1
@@ -141,7 +141,7 @@
   },
   "16": {
     "inputs": {
-      "image": "bp-13.png"
+      "image": "clothed-194.png"
     },
     "class_type": "LoadImage",
     "_meta": {

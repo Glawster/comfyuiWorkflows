@@ -37,12 +37,12 @@
       "cfg": 3,
       "sampler_name": "dpmpp_2m",
       "scheduler": "karras",
-      "denoise": 0.45,
+      "denoise": 0.25,
       "feather": 4,
       "noise_mask": true,
       "force_inpaint": true,
       "bbox_threshold": 0.55,
-      "bbox_dilation": 16,
+      "bbox_dilation": 32,
       "bbox_crop_factor": 1.8,
       "sam_detection_hint": "center-1",
       "sam_dilation": 0,
@@ -54,7 +54,7 @@
       "wildcard": "",
       "cycle": 1,
       "inpaint_model": true,
-      "noise_mask_feather": 8,
+      "noise_mask_feather": 4,
       "tiled_encode": false,
       "tiled_decode": false,
       "image": [
@@ -106,7 +106,7 @@
   },
   "6": {
     "inputs": {
-      "text": "(kathy:1.3), kathy, same woman, same person,\nconsistent facial structure, natural skin texture,\nsharp eyes, realistic face\n",
+      "text": "(kathy:1.3), kathy, same woman, same person,\nconsistent facial structure, natural skin texture,\nsharp eyes, realistic face\n,clean eyelids, crisp eyelashes, natural catchlights\n",
       "clip": [
         "2",
         1
@@ -119,7 +119,7 @@
   },
   "7": {
     "inputs": {
-      "text": "different person, generic face, stock photo face,\ncelebrity, model face\n",
+      "text": "different person, generic face, stock photo face,\ncelebrity, model face\n, smudged eyes, messy eyeliner, extra pupils, deformed iris, asymmetrical eyes\n",
       "clip": [
         "2",
         1
